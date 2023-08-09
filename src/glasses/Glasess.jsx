@@ -5,12 +5,14 @@ import GlasessItem from './GlasessItem'
 import ModelGlasess from './ModelGlasess'
 export default class Glasess extends Component {
     state = {
-        Detail: Data[2]
+        Detail: Data[5]
     }
 
     getDetailGlasess = (glasess) => {
-        this.setState = ({
+        this.setState ({
             Detail: glasess,
+        },()=>{
+            console.log(glasess)
         })
     }
     render() {
